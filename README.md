@@ -4,7 +4,7 @@
 
 A static, responsive showcase of payment card readers (Dojo, iZettle, SumUp) built with pure HTML and Tailwind CSS, leveraging CSS Grid for layout. No images or external design assets—each card reader is crafted with CSS for inspiration and rapid prototyping.
 
-![Preview of Card Readers](assets/All Card Readers.png)
+![Preview of Card Readers](assets/AllCardReaders.png)
 
 ## Usage
 
