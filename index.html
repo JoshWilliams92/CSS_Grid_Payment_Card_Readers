@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Reader Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-10 text-center">Card Reader Showcase</h1>
+    <div class="flex flex-wrap justify-center gap-10 items-start">
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- SumUp grid-4                                -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="relative w-full max-w-[17.5rem] h-fit bg-white rounded-[2rem] shadow-xl shadow-black/30 border border-gray-300 p-3 flex flex-col transition-transform hover:scale-[1.01]">
+        <!-- Header -->
+        <div class="mb-4 flex items-center justify-between text-[10px] font-semibold uppercase tracking-widest text-gray-400">
+          <span>SumUp Air</span>
+        </div>
+        <!-- Screen -->
+        <div class="w-full h-32 bg-gray-50 rounded-md mb-4 p-2.5 flex flex-col justify-between shadow-inner border-2 border-black relative overflow-hidden">
+          <div class="flex flex-col items-center justify-center flex-grow">
+            <span class="text-2xl font-bold text-gray-800">£19.99</span>
+            <span class="text-[10px] font-black tracking-tighter uppercase text-gray-400 mt-1">sumup</span>
+          </div>
+        </div>
+        <!-- Keypad -->
+        <div class="grid grid-cols-[1fr_auto] gap-x-3 px-1 pb-1 items-start">
+          <!-- Number pad -->
+          <div class="grid grid-cols-3 gap-y-3 text-center">
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">1</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">2</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">3</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">4</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">5</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">6</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">7</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">8</span></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">9</span></div>
+            <div></div>
+            <div class="flex items-center justify-center"><span class="text-2xl font-black text-gray-900">0</span></div>
+            <div></div>
+          </div>
+          <!-- Action buttons -->
+          <div class="flex flex-col items-center">
+            <div class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="h-6 w-6 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="mt-4 h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="h-6 w-6 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            </div>
+            <div class="mt-5 h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.8" stroke="currentColor" class="h-5 w-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- iZettle grid-3                              -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="relative w-full max-w-[17.5rem] h-fit bg-slate-200 rounded-[2.5rem] shadow-xl shadow-black/30 border border-gray-300 p-4 flex flex-col transition-transform hover:scale-[1.02]">
+        <!-- Side accent -->
+        <div class="absolute top-16 -right-0.5 w-1.5 h-14 rounded-l-sm bg-blue-500"></div>
+        <!-- Header -->
+        <div class="mb-4 flex items-center justify-between text-[10px] font-semibold uppercase tracking-widest text-gray-400">
+          <span>Zettle Reader</span>
+        </div>
+        <!-- Screen -->
+        <div class="w-full aspect-[21/20] bg-[#1a1a1a] rounded-[2rem] mb-4 p-3 flex flex-col items-center justify-center text-white text-center shadow-inner relative overflow-hidden">
+          <div class="mb-4 opacity-70">
+            <div class="w-12 h-12 rounded-full border-2 border-blue-400 flex items-center justify-center relative">
+              <div class="w-8 h-8 rounded-full border border-blue-300 opacity-40 absolute animate-pulse"></div>
+              <span class="text-xs">contactless</span>
+            </div>
+          </div>
+          <div class="flex items-start justify-center">
+            <span class="text-xs mt-1 font-bold mr-0.5">£</span>
+            <span class="text-2xl font-black">24.99</span>
+          </div>
+          <p class="mt-3 text-[10px] font-medium text-gray-400 uppercase tracking-widest leading-tight">Tap or insert card</p>
+        </div>
+        <!-- Keypad -->
+        <div class="grid grid-cols-3 gap-x-2 gap-y-3 px-1 pb-2 justify-items-center">
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">1</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">2</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">3</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">4</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">5</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">6</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">7</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">8</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">9</div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center shadow-sm bg-black">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-red-500">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="h-8 w-14 rounded-full flex items-center justify-center text-base font-semibold shadow-sm bg-black text-white">0</div>
+          <div class="h-8 w-14 rounded-full bg-blue-600 flex items-center justify-center shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 0 1 1.04-.208Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════ -->
+      <!-- Dojo grid-3                                 -->
+      <!-- ═══════════════════════════════════════════ -->
+      <div class="relative w-full max-w-[17.5rem] h-fit bg-[#f7f7f8] rounded-[2rem] border border-gray-300 p-3 shadow-xl shadow-black/30 flex flex-col transition-transform hover:scale-[1.02]">
+        <!-- Header -->
+        <div class="mb-4 flex items-center justify-between text-[10px] font-semibold uppercase tracking-widest text-gray-500">
+          <span>Dojo Reader</span>
+        </div>
+        <!-- Screen -->
+        <div class="relative overflow-hidden w-full aspect-[21/20] bg-black rounded-[2rem] mb-4 p-3 flex items-center justify-center text-white text-center shadow-inner">
+          <div class="flex flex-col items-center justify-center">
+            <span class="text-sm font-semibold tracking-[0.45em]">DOJO</span>
+            <span class="mt-2 text-xs tracking-wide text-slate-300">£32.50</span>
+          </div>
+        </div>
+        <!-- Keypad -->
+        <div class="space-y-2 px-1 pb-2">
+          <!-- Numbers 1-9 -->
+          <div class="grid grid-cols-3 gap-x-2 gap-y-1.5 justify-items-center">
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">1</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">2</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">3</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">4</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">5</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">6</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">7</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">8</div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">9</div>
+          </div>
+          <!-- Bottom action row -->
+          <div class="grid grid-cols-3 grid-rows-[2.25rem_2.25rem] gap-x-2 gap-y-1.5 justify-items-center">
+            <div class="row-span-2 flex h-full w-14 items-center justify-center rounded-md bg-[#e15f59] shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-slate-200">
+                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="flex h-8 w-14 items-center justify-center rounded-md bg-black text-[13px] font-semibold text-white shadow-sm">0</div>
+            <div class="row-span-2 flex h-full w-14 items-center justify-center rounded-md bg-[#2db27f] shadow-sm">
+              <span class="h-4 w-4 rounded-full bg-slate-200 shadow-inner inline-block"></span>
+            </div>
+            <div class="col-start-2 flex h-8 w-14 items-center justify-center rounded-md bg-[#f2c44f] shadow-sm">
+              <span class="text-base font-semibold leading-none text-slate-200">&lt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
