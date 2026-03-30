@@ -16,7 +16,7 @@ A static, responsive showcase of payment card readers (Dojo, iZettle, SumUp) bui
 ## Structure
 
 - `index.html` — Main page with the card reader showcase
-- `assets/` — Placeholder for future assets (currently empty)
+- `assets/` — Placeholder for future assets
 - `README.md` — This file
 
 
